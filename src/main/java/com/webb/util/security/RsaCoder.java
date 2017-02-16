@@ -15,7 +15,7 @@ import java.util.Map;
  * @author 67345
  * @create 2017-02-15 17:41
  **/
-public class RsaUtils extends Coder {
+public class RsaCoder extends Coder {
 
     public static final String KEY_ALGORITHM = "RSA";
     public static final String SIGNATURE_ALGORITHM = "MD5withRSA";
@@ -65,7 +65,7 @@ public class RsaUtils extends Coder {
     /**
      * 用公钥加密
      */
-    public static byte[] encryptByPublic(byte[] data, String key) throws Exception {
+    public static byte[] encryptByPublicKey(byte[] data, String key) throws Exception {
         byte[] keyBytes = decryptBASE64(key); // 对公钥解密
         X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(keyBytes);
         KeyFactory keyFactory = KeyFactory.getInstance(KEY_ALGORITHM);
@@ -80,7 +80,7 @@ public class RsaUtils extends Coder {
     /**
      * 用公钥加密
      */
-    public static byte[] decryptByPublic(byte[] data, String key) throws Exception {
+    public static byte[] decryptByPublicKey(byte[] data, String key) throws Exception {
         byte[] keyBytes = decryptBASE64(key);
 
         X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(keyBytes);
