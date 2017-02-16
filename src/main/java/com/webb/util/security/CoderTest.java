@@ -35,21 +35,12 @@ public class CoderTest {
 
         assertArrayEquals(Coder.encryptSHA(inputData), Coder.encryptSHA(inputData));
 
-        String key = Coder.initMacKey();
-
-        System.out.println("Mac 密钥：" + key);
-
-        assertArrayEquals(Coder.encryptHMAC(inputData, key), Coder.encryptHMAC(inputData, key));
-
         BigInteger md5 = new BigInteger(Coder.encryptMD5(inputData));
         System.out.println("MD5: " + md5.toString(16));
 
         BigInteger sha = new BigInteger(Coder.encryptSHA(inputData));
         System.out.println("SHA: " + sha.toString(32));
 
-        BigInteger mac = new BigInteger(Coder.encryptHMAC(inputData, inputStr));
-        System.out.println("HMAC: " + mac.toString(16));
     }
-
 
 }
