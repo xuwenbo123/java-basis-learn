@@ -1,1 +1,27 @@
 Java多线程编程核心技术
+
+
+
+2. 对象及变量的并发访问
+
+    - synchronized同步方法
+        - 方法内的变量为线程安全
+        - 实例变量非线程安全
+        - 对个对象多个锁
+        - synchronized方法与锁对象
+        - 脏读
+        - synchronized锁重入
+        - 出现异常，锁自动释放
+        - 同步不具有继承性
+
+    - synchronized同步语句块
+        - synchronized 方法的弊端
+        - synchronized 同步代码块的使用
+        - 用同步代码块解决同步方法的弊端
+        - 一半异步，一半同步
+        - synchronized代码块间的同步性
+        - 验证同步synchronized(this)代码块是锁定当前对象的
+        - 将任意对象作为对象监视器
+
+    - volatile关键字
+        - 关键字volatile与死循环

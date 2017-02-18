@@ -1,0 +1,19 @@
+package com.webb.basis.thread.core.chapter1.one.seven.eight;
+
+/**
+ * @author 67345
+ * @create 2017-02-16 21:28
+ **/
+public class MyThread extends Thread {
+
+    @Override
+    public void run() {
+        while (true) {
+            if (this.isInterrupted()) {
+                System.out.println("停止了");
+                return;
+            }
+            System.out.println("timer = " + System.currentTimeMillis());
+        }
+    }
+}
