@@ -6,7 +6,7 @@ package com.webb.basis.thread.core.chapter1.one.eight.three;
  **/
 public class MyObject {
 
-    private String username = "1";
+    private String username = "one";
     private String password = "11";
 
     public void setValue(String u, String p) {

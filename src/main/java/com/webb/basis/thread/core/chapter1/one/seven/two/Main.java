@@ -13,7 +13,7 @@ public class Main {
         thread.start();
         thread.interrupt();
 
-        System.out.println("是否停止 1 ? = " + thread.interrupted()); // false
+        System.out.println("是否停止 one ? = " + thread.interrupted()); // false
         System.out.println("是否停止 2 ? = " + thread.interrupted()); // false
 
         System.out.println("end!");*/
@@ -23,7 +23,7 @@ public class Main {
           */
         Thread.currentThread().interrupt();
 
-        System.out.println("是否停止 1 ? = " + Thread.interrupted()); // true
+        System.out.println("是否停止 one ? = " + Thread.interrupted()); // true
         System.out.println("是否停止 2 ? = " + Thread.interrupted()); // false
 
         System.out.println("end!");
@@ -35,7 +35,7 @@ public class Main {
         thread.start();
         thread.interrupt();
 
-        System.out.println("是否停止 1 ? = " + thread.isInterrupted()); // true
+        System.out.println("是否停止 one ? = " + thread.isInterrupted()); // true
         System.out.println("是否停止 2 ? = " + thread.isInterrupted()); // true
         System.out.println("end!");
 

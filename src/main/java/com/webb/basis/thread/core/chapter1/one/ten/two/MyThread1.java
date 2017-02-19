@@ -24,6 +24,6 @@ public class MyThread1 extends Thread {
 
         long endTime = System.currentTimeMillis();
 
-        System.out.println(" thread 1 use time = " + (endTime - beginTime));
+        System.out.println(" thread one use time = " + (endTime - beginTime));
     }
 }
