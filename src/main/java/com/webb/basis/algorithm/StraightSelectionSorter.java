@@ -33,11 +33,5 @@ public class StraightSelectionSorter extends Sorter {
             }
             // 如果array[i]是无序区最小的元素，不需要执行交换
         }
-
-        System.out.println("直接选择结果:");
-
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
     }
 }

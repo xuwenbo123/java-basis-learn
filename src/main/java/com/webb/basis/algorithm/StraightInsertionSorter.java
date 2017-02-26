@@ -29,13 +29,6 @@ public class StraightInsertionSorter extends Sorter {
                 array[j + 1] = tmp;
             }
         }
-
-        System.out.println("直接插入排序结果：");
-
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
-
     }
 
 }
